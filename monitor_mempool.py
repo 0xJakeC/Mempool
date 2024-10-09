@@ -13,10 +13,7 @@ if not web3.is_connected():
     print("Failed to connect to the Ethereum network.")
     exit()
 
-# If using a PoA network like Rinkeby, add the middleware
-web3.middleware_onion.inject(geth_poa_middleware, layer=0)
-
-# Define the wallet address to monitor
+# Wallets/CA to track
 wallet_address = Web3.to_checksum_address("0xE2588450DFa9a7b862984c215AF88853b15A60a5")
 
 # ERC20 Transfer function signature
