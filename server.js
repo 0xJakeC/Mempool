@@ -5,7 +5,7 @@ const NodeCache = require('node-cache');
 const app = express();
 const port = 3000;
 
-const providerUrl = 'wss://mainnet.infura.io/ws/v3/e33870ee2cd8461db67d69e018b6f8f3';
+const providerUrl = 'wss://mainnet.infura.io/ws/v3/xxxxxxx';
 const provider = new ethers.WebSocketProvider(providerUrl);
 
 let pendingTransactions = [];
